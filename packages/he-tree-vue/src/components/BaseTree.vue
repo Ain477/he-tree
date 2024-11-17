@@ -27,7 +27,7 @@
               </div>
             </td>
           </template>
-          <slot v-else :node="stat.data" :stat="stat" :indentStyle="indentStyle" :tree="self">{{ stat.data[textKey] }}
+          <slot v-else :node="stat.data" :stat="stat" :indentStyle="indentStyle" :tree="self" :index="index">{{ stat.data[textKey] }}
           </slot>
         </template>
       </TreeNode>
